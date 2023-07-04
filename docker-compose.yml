@@ -1,0 +1,31 @@
+version: '3'
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    environment:
+      - PORT=3000
+    restart: always
+    networks:
+      - my-network
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app
+    restart: always
+    networks:
+      - my-network
+
+networks:
+  my-network:

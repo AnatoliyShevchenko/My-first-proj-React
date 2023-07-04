@@ -1,0 +1,14 @@
+.registration-page {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 225, 225);
+    height: 977px;
+}
+
+.block-form {
+    text-align: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 45%;
+    top: 40%;
+}

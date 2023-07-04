@@ -1,0 +1,90 @@
+.shop-retrieve {
+    display: flex;
+    flex-direction: column;
+}
+
+.retrieve-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(230, 225, 225);
+    border-bottom: 8px solid rgb(202, 235, 255);
+}
+
+.retrieve-fill-header {
+    font-size: larger;
+    font-weight: bolder;
+    height: 40px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.retrieve-main {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230, 225, 225);
+    height: 840px;
+}
+
+.item-retrieve {
+    border: 1px solid rgb(202, 235, 255);
+    width: 50%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.item-retrieve video {
+    width: 600px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.post-review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.post-review button {
+    cursor: pointer;
+    width: 90px;
+}
+
+.reviews-retrieve {
+    border: 1px solid rgb(202, 235, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.retrieve-footer {
+    display: flex;
+    background-color: rgb(230, 225, 225);
+    border-top: 8px solid rgb(202, 235, 255);
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.retrieve-fill-footer {
+    font-size: larger;
+    font-weight: bolder;
+    height: 40px;
+    padding-top: 20px;
+}
